@@ -1,8 +1,15 @@
 @import url("_variables.css");
-@import url("_typography.css");
+
+/* establish a layer order up-front, from lowest to highest priority */
+@layer reset, defaults, typography, vendor, components, utilities, overrides;
+
+@import url("_reset.css") layer(reset);
+@import url("_typography.css") layer(typography);
 
 body {
-  background: red;
+  --main-bg-color: pink;
+
+  background: var(--main-bg-color);
 }
 
 .hello {
