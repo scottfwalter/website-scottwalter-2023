@@ -33,6 +33,6 @@
       "prettier --write --ignore-unknown"
     ],
     "content/**/*": "prettier --write --ignore-unknown",
-    "content/**/*.css": "stylelint"
+    "content/**/*.css": "stylelint --fix"
   }
 }
