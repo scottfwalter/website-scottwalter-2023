@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eleventy Static Site</title>
 
+    <script type="importmap">
+      {
+        "imports": {
+          "web-vitals": "https://unpkg.com/web-vitals@3?module"
+        }
+      }
+    </script>
+
+    <!-- Append the `?module` param to load the module version of `web-vitals` -->
+    <script type="module">
+      import { onCLS, onFID, onLCP, onFCP } from "web-vitals";
+
+      onCLS((r) => {
+        console.log("Cumlative Layout Shift", r);
+      });
+      onFID((r) => {
+        console.log("First Input Delay", r);
+      });
+      onLCP((r) => {
+        console.log("Largest Contentful Paint", r);
+      });
+      onFCP((r) => {
+        console.log("First Contentful Paint", r);
+      });
+    </script>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Hello World! How are you?</h1>
+    <h1>Hello World! How are you?11</h1>
   </body>
 </html>

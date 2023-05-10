@@ -34,5 +34,8 @@
     ],
     "content/**/*": "prettier --write --ignore-unknown",
     "content/**/*.css": "stylelint --fix"
+  },
+  "dependencies": {
+    "web-vitals": "^3.3.1"
   }
 }
