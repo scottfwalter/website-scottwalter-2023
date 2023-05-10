@@ -6,12 +6,24 @@
   "scripts": {
     "site:build": "npx @11ty/eleventy",
     "site:serve": "npx @11ty/eleventy --serve",
-    "site:watch": "npx @11ty/eleventy --watch"
+    "site:watch": "npx @11ty/eleventy --watch",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-postcss-extension": "^1.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.1",
+    "stylelint-config-standard": "^33.0.0"
+  },
+  "lint-staged": {
+    "code/**/*": "prettier --write --ignore-unknown",
+    "content/**/*": "prettier --write --ignore-unknown",
+    "content/**/*.css": "stylelint"
   }
 }
