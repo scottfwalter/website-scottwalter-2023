@@ -46,7 +46,7 @@
   },
   "lint-staged": {
     "code/**/*.js": [
-      "eslint",
+      "eslint --fix",
       "prettier --write --ignore-unknown"
     ],
     "content/**/*": "prettier --write --ignore-unknown",
