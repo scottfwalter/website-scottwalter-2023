@@ -15,7 +15,6 @@ module.exports = {
   },
   rules: {
     'no-console': 0,
-    'comma-dangle': 0,
     'implicit-arrow-linebreak': 0,
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
   },
