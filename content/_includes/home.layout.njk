@@ -9,42 +9,18 @@ title: My Home Sweet Home
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
 
-     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-
-    <script type="importmap">
-      {
-        "imports": {
-          "web-vitals": "https://unpkg.com/web-vitals@3?module"
-        }
-      }
-    </script>
-
-    <!-- Append the `?module` param to load the module version of `web-vitals` -->
-    <script type="module">
-      import { onCLS, onFID, onLCP, onFCP } from "web-vitals";
-
-      onCLS((r) => {
-        console.log("Cumlative Layout Shift", r);
-      });
-      onFID((r) => {
-        console.log("First Input Delay", r);
-      });
-      onLCP((r) => {
-        console.log("Largest Contentful Paint", r);
-      });
-      onFCP((r) => {
-        console.log("First Contentful Paint", r);
-      });
-    </script>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
     <script type="module">
-        import { MY_NAME } from './js/app.js';
+        import { MY_NAME, startWebVitals } from './js/app.js';
         console.log(MY_NAME);
+
+        startWebVitals();
     </script>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+    <b>Content</b>
     {{ content | safe }}
   </body>
 </html>

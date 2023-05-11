@@ -1,0 +1,13 @@
+---
+title: Collections
+permalink: "/collections.html"
+---
+<ul>
+
+
+{%- for post in collections.post -%}
+  <li><a href="{{ post.url }}">{{ post.url }} {{ post.data.title }}</a></li>
+{%- endfor -%}
+
+
+</ul>
