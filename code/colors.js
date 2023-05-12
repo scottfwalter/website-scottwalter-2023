@@ -1,1 +1,1 @@
-export const MY_COLOR = 'blue2';
+export const MY_COLOR = 'blue';

@@ -2,7 +2,7 @@ import { onCLS, onFID, onLCP, onFCP } from 'web-vitals';
 
 (async () => {
   const { MY_COLOR } = await import('./colors');
-  console.log('COLOR1', MY_COLOR);
+  console.log('COLOR', MY_COLOR);
 })();
 
 export const startWebVitals = () => {

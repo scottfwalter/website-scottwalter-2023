@@ -13,11 +13,11 @@
   "scripts": {
     "clean": "del-cli --force ./public && del-cli --force ./_tmp",
     "presite:build": "del-cli --force ./public",
-    "site:build": "npx @11ty/eleventy",
-    "site:serve": "npx @11ty/eleventy --serve",
-    "site:watch": "npx @11ty/eleventy --watch",
+    "site:build": "SITE_DOMAIN=https://scottwalter.com  npx @11ty/eleventy",
+    "site:serve": "SITE_DOMAIN=https://scottwalter.com  npx @11ty/eleventy --serve",
+    "site:watch": "SITE_DOMAIN=https://scottwalter.com  npx @11ty/eleventy --watch",
     "prepare": "husky install",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "npm run site:serve",
     "watch:rollup": "npx rollup -c --watch",
     "watch": "npm run clean && npm-run-all --parallel watch:*"
   },
@@ -26,6 +26,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "del-cli": "^5.0.0",
