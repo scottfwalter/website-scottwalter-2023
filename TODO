@@ -3,13 +3,13 @@
 - ~~stylelint~~
 - ~~css import~~
 - ~~css layers~~
-- font
+- ~~font~~
 - ~~web vitals~~
-- search with 11ty https://lunrjs.com/docs/index.html and https://github.com/5t3ph/11ty-serverless-search and https://joshinator.de/posts/11ty-search/
 - ~~dynamic imports~~
 - ~~sitemap and robots.txt https://github.com/Psypher1/learneleventy~~
-- images https://www.11ty.dev/docs/plugins/image/
-- critical css https://www.npmjs.com/package/eleventy-critical-css
-- ~~cache fetch https://www.11ty.dev/docs/plugins/fetch/ https://www.11ty.dev/docs/data-js/~~
-- purge css https://www.npmjs.com/package/eleventy-plugin-purgecss
 
+- ~~critical css https://www.npmjs.com/package/eleventy-critical-css~~
+- ~~cache fetch https://www.11ty.dev/docs/plugins/fetch/ https://www.11ty.dev/docs/data-js/~~
+- ~~purge css https://www.npmjs.com/package/eleventy-plugin-purgecss~~
+- search with 11ty https://lunrjs.com/docs/index.html and https://github.com/5t3ph/11ty-serverless-search and https://joshinator.de/posts/11ty-search/
+- images https://www.11ty.dev/docs/plugins/image/

@@ -1,9 +1,25 @@
+/* hi-melody-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hi Melody';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/hi-melody-v13-latin-regular.woff2') format('woff2'),
+    url('../fonts/hi-melody-v13-latin-regular.woff') format('woff');
+}
+
+body {
+  font-family: 'Hi Melody', serif;
+}
+
 h1 {
+  font-family: 'Hi Melody', serif;
   font-size: 5vw;
   color: yellow;
 }
 
 h3 {
+  font-family: 'Hi Melody', serif;
   font-size: 5vw;
   color: yellow;
 }
