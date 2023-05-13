@@ -12,15 +12,22 @@ title: My Home Sweet Home
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 
     <script type="module">
-        import { MY_NAME, startWebVitals } from './js/app.js';
+        import { MY_NAME, startWebVitals, searchIndex, searchResults } from './js/app.js';
         console.log(MY_NAME);
 
         startWebVitals();
+        const searchData = await searchIndex();
+
+        document.getElementById('search').addEventListener('keyup', (event) => {
+          searchResults(event.target.value);
+        });
+
     </script>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <input id="search">
     <b>Content</b>
     {{ content | safe }}
   </body>

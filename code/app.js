@@ -20,4 +20,14 @@ export const startWebVitals = () => {
   });
 };
 
+export const searchIndex = async () => {
+  const response = await fetch('/search.json');
+  const jsonData = await response.json();
+  console.log(jsonData);
+};
+
+export const searchResults = (searchCriteria, _searchIndex) => {
+  console.log('filtering', searchCriteria);
+};
+
 export const MY_NAME = 'SCOTT Frederick WALTER 1234567';
